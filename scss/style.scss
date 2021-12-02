@@ -66,14 +66,17 @@
                             &.txt{
                                 flex-basis: 40%;
                                 background: brown;
+                                position: relative;
 
                                 >div{
                                     width: 50%; height: 50%;
-                                    display: none;
-                                    transition: 0.5s;
+                                    position: absolute;
+                                    top: 0; left: 0;
+                                    opacity: 0;
+                                    transition: 1s;
 
                                     &.on{
-                                        display: block;
+                                        opacity: 1;
                                     }
 
                                     &#left{

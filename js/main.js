@@ -60,6 +60,9 @@ $(".left").on("mouseenter", function(e){
 
     $(".wrap").find("article").removeClass("on");
     $(this).addClass("on");
+
+    $(this).next("article").find("div").removeClass("on");
+    $(this).next("article").find("#left").addClass("on");
 });
 
 $(".right").on("mouseenter", function(e){
@@ -70,4 +73,7 @@ $(".right").on("mouseenter", function(e){
 
     $(".wrap").find("article").removeClass("on");
     $(this).addClass("on");
+
+    $(this).prev("article").find("div").removeClass("on");
+    $(this).prev("article").find("#right").addClass("on");
 });

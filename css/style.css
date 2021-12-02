@@ -60,14 +60,18 @@ a {
             flex-basis: 10%; }
           #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt {
             flex-basis: 40%;
-            background: brown; }
+            background: brown;
+            position: relative; }
             #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt > div {
               width: 50%;
               height: 50%;
-              display: none;
-              transition: 0.5s; }
+              position: absolute;
+              top: 0;
+              left: 0;
+              opacity: 0;
+              transition: 1s; }
               #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt > div.on {
-                display: block; }
+                opacity: 1; }
               #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt > div#left {
                 background: #fff; }
               #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt > div#right {
