@@ -51,29 +51,23 @@ function activation(){
     bgs[i].classList.add("on");
 }
 
+const left = $(".left");
+const right = $(".right");
 
-$(".left").on("mouseenter", function(e){
-
-    let target = $(this).attr("class");
-    target = target.split(" ")[0];
-    console.log(target);
-
-    $(".wrap").find("article").removeClass("on");
-    $(this).addClass("on");
-
-    $(this).next("article").find("div").removeClass("on");
-    $(this).next("article").find("#left").addClass("on");
+left.on("mouseenter", function(e){
+    classActive(this);
 });
 
-$(".right").on("mouseenter", function(e){
-
-    let target = $(this).attr("class");
-    target = target.split(" ")[0];
-    console.log(target);
-
-    $(".wrap").find("article").removeClass("on");
-    $(this).addClass("on");
-
-    $(this).prev("article").find("div").removeClass("on");
-    $(this).prev("article").find("#right").addClass("on");
+right.on("mouseenter", function(e){
+    classActive(this);
 });
+
+function classActive(el){
+    let target = $(el).attr("class").split(" ")[0];
+
+    $(el).parent().find("article").removeClass("on");
+    $(el).addClass("on");
+
+    $(el).parent().find("article").find("div").removeClass("on");
+    $(el).parent().find("article").find("#"+target).addClass("on");
+}
