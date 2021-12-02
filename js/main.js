@@ -52,13 +52,22 @@ function activation(){
 }
 
 
-$(".wrap").find("article").on("mouseenter", function(e){
+$(".left").on("mouseenter", function(e){
 
     let target = $(this).attr("class");
+    target = target.split(" ")[0];
     console.log(target);
-    
+
     $(".wrap").find("article").removeClass("on");
     $(this).addClass("on");
+});
 
-    
-})
+$(".right").on("mouseenter", function(e){
+
+    let target = $(this).attr("class");
+    target = target.split(" ")[0];
+    console.log(target);
+
+    $(".wrap").find("article").removeClass("on");
+    $(this).addClass("on");
+});

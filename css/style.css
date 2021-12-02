@@ -72,6 +72,8 @@ a {
                 background: #fff; }
               #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt > div#right {
                 background: #111; }
+            #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt.on {
+              flex-basis: 40%; }
           #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.right {
             flex-basis: 10%; }
           #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.on {

@@ -84,6 +84,10 @@
                                         background: #111;
                                     }
                                 }
+
+                                &.on{
+                                    flex-basis: 40%;
+                                }
                             }
 
                             &.right{
