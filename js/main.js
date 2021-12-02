@@ -50,3 +50,15 @@ function activation(){
     }
     bgs[i].classList.add("on");
 }
+
+
+$(".wrap").find("article").on("mouseenter", function(e){
+
+    let target = $(this).attr("class");
+    console.log(target);
+    
+    $(".wrap").find("article").removeClass("on");
+    $(this).addClass("on");
+
+    
+})

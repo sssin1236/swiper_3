@@ -35,7 +35,6 @@
 
             .inner{
                 width: 100%; height: 100%;
-                padding: 60px;
                 opacity: 0.5;
                 z-index: 1;
                 transition: opacity 0.5s;
@@ -46,10 +45,57 @@
             }
 
             &[data-swiper-slide-index="0"]{
-                
-            }
+                .inner{
+                    .wrap{
+                        width: 100%; height: 100%;
+                        overflow: hidden;
+                        position: relative;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;    
 
-            &[data-swiper-slide-index="1"]{
+                        article{
+                            height: 100%;
+                            border: 1px solid salmon;
+                            transition: 0.7s;
+
+                            &.left{
+                                flex-basis: 10%;
+                            }
+
+                            &.txt{
+                                flex-basis: 40%;
+                                background: brown;
+
+                                >div{
+                                    width: 50%; height: 50%;
+                                    display: none;
+                                    transition: 0.5s;
+
+                                    &.on{
+                                        display: block;
+                                    }
+
+                                    &#left{
+                                        background: #fff;
+                                    }
+
+                                    &#right{
+                                        background: #111;
+                                    }
+                                }
+                            }
+
+                            &.right{
+                                flex-basis: 10%;
+                            }
+
+                            &.on{
+                                flex-basis: 50%;
+                            }
+                        }
+                    }
+                }
                 
             }
         }
@@ -103,6 +149,7 @@
             border-radius: 0px;
             margin: 0px 100px;
             opacity: 0.7;
+            font: 15px/1 'arial';
             color: #333;
 
             &.swiper-pagination-bullet-active{

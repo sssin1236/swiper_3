@@ -39,12 +39,43 @@ a {
       #swiper .swiper-wrapper .swiper-slide .inner {
         width: 100%;
         height: 100%;
-        padding: 60px;
         opacity: 0.5;
         z-index: 1;
         transition: opacity 0.5s; }
       #swiper .swiper-wrapper .swiper-slide.swiper-slide-active .inner {
         opacity: 1; }
+      #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article {
+          height: 100%;
+          border: 1px solid salmon;
+          transition: 0.7s; }
+          #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.left {
+            flex-basis: 10%; }
+          #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt {
+            flex-basis: 40%;
+            background: brown; }
+            #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt > div {
+              width: 50%;
+              height: 50%;
+              display: none;
+              transition: 0.5s; }
+              #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt > div.on {
+                display: block; }
+              #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt > div#left {
+                background: #fff; }
+              #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt > div#right {
+                background: #111; }
+          #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.right {
+            flex-basis: 10%; }
+          #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.on {
+            flex-basis: 50%; }
   #swiper .swiper-button-next {
     height: 50px;
     padding: 10px 0 0;
@@ -84,6 +115,7 @@ a {
       border-radius: 0px;
       margin: 0px 100px;
       opacity: 0.7;
+      font: 15px/1 'arial';
       color: #333; }
       #swiper .swiper-pagination span.swiper-pagination-bullet-active {
         opacity: 1;
