@@ -63,6 +63,9 @@ right.on("mouseenter", function(e){
 });
 
 function classActive(el){
+    let isOn = $(el).hasClass("on");
+    if(isOn) return;
+
     let target = $(el).attr("class").split(" ")[0];
 
     $(el).parent().find("article").removeClass("on");
