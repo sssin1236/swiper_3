@@ -64,7 +64,6 @@ font-family: 'Syncopate', sans-serif;
         #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap {
           width: 100%;
           height: 100%;
-          overflow: hidden;
           position: relative;
           display: flex;
           justify-content: space-between;
@@ -74,16 +73,19 @@ font-family: 'Syncopate', sans-serif;
             height: 100%;
             transition: 1s; }
             #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.left {
-              flex-basis: 10%; }
+              flex-basis: 10%;
+              order: 1; }
               #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.left img {
                 filter: grayscale(0.5) brightness(0.8); }
             #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.right {
-              flex-basis: 10%; }
+              flex-basis: 10%;
+              order: 3; }
             #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt {
               flex-basis: 40%;
               background: #111;
               position: relative;
-              transition-timing-function: ease-in-out; }
+              transition-timing-function: ease-in-out;
+              order: 2; }
               #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #left {
                 width: 100%;
                 height: 100%;
@@ -91,16 +93,30 @@ font-family: 'Syncopate', sans-serif;
                 position: absolute;
                 top: 0;
                 left: 0;
-                opacity: 0;
-                transition: 0.3s; }
+                opacity: 0; }
                 #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #left.on {
-                  opacity: 1; }
+                  opacity: 1;
+                  transition: 0.3s; }
+                  #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #left.on .menu {
+                    opacity: 1; }
+                  #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #left.on .list {
+                    opacity: 1; }
+                  #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #left.on p {
+                    opacity: 1; }
+                  #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #left.on span {
+                    opacity: 1; }
+                  #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #left.on .thumb {
+                    opacity: 1; }
+                  #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #left.on h2 {
+                    opacity: 1; }
                 #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #left .menu {
                   width: 100%;
                   margin: 50px 0 20px;
                   padding: 10px 0;
                   border-top: 1px solid #999;
-                  border-bottom: 1px solid #999; }
+                  border-bottom: 1px solid #999;
+                  opacity: 0;
+                  transition: opacity 0.7s 0.7s; }
                   #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #left .menu::after {
                     content: '';
                     display: block;
@@ -117,10 +133,12 @@ font-family: 'Syncopate', sans-serif;
                 #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #left .list {
                   width: 100%;
                   margin-bottom: 30px;
-                  position: relative; }
+                  position: relative;
+                  opacity: 0;
+                  transition: opacity 0.7s 0.7s; }
                   #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #left .list li {
                     font: 22px/1 'Genos';
-                    color: #bbb;
+                    color: #eee;
                     margin-bottom: 5px; }
                     #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #left .list li:last-child {
                       position: absolute;
@@ -149,6 +167,45 @@ font-family: 'Syncopate', sans-serif;
                           position: absolute;
                           top: 5px;
                           right: -20px; }
+                #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #left p {
+                  font: 26px/1 'Genos';
+                  color: #aaa;
+                  text-align: right;
+                  padding-bottom: 20px;
+                  margin-bottom: 20px;
+                  border-bottom: 1px solid #999;
+                  opacity: 0;
+                  transition: opacity 0.7s 0.7s; }
+                #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #left h2 {
+                  font: bold 180px/1 'Syncopate';
+                  color: #fff;
+                  text-align: center;
+                  opacity: 0;
+                  transition: opacity 1.5s 0.5s; }
+                  #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #left h2::after {
+                    content: 'FOLIO';
+                    display: block;
+                    width: 100%;
+                    text-shadow: 0 0 2px #fff;
+                    color: #111; }
+                #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #left span {
+                  font: 50px/1 'Montserrat';
+                  color: #eee;
+                  position: absolute;
+                  bottom: 50px;
+                  left: 50px;
+                  opacity: 0;
+                  transition: opacity 0.7s 0.7s; }
+                #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #left .thumb {
+                  width: 80px;
+                  height: 80px;
+                  object-fit: cover;
+                  position: absolute;
+                  bottom: 50px;
+                  right: 50px;
+                  transform-origin: bottom right;
+                  opacity: 0;
+                  transition: opacity 0.7s 0.7s; }
               #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #right {
                 width: 100%;
                 height: 100%;
@@ -156,10 +213,10 @@ font-family: 'Syncopate', sans-serif;
                 position: absolute;
                 top: 0;
                 left: 0;
-                opacity: 0;
-                transition: 0.3s; }
+                opacity: 0; }
                 #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #right.on {
-                  opacity: 1; }
+                  opacity: 1;
+                  transition: 0.3s; }
                   #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #right.on .nav {
                     opacity: 1; }
                   #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #right.on h1 {
@@ -176,7 +233,7 @@ font-family: 'Syncopate', sans-serif;
                   width: 100%;
                   margin: 120px 0 150px;
                   opacity: 0;
-                  transition: opacity 0.5s 0.3s; }
+                  transition: opacity 0.7s 0.5s; }
                   #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #right .nav::after {
                     content: '';
                     display: block;
@@ -259,7 +316,7 @@ font-family: 'Syncopate', sans-serif;
                   font: bold 24px/1 'Genos';
                   color: rgba(238, 238, 238, 0.3);
                   opacity: 0;
-                  transition: opacity 0.5s 0.3s; }
+                  transition: opacity 0.7s 0.5s; }
                   #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #right > h1 b {
                     font: bold 24px/1 'Genos';
                     color: tan;
@@ -270,11 +327,11 @@ font-family: 'Syncopate', sans-serif;
                   letter-spacing: 2px;
                   margin: 20px 0;
                   opacity: 0;
-                  transition: opacity 1s 0.1s; }
+                  transition: opacity 1.5s 0.3s; }
                 #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #right .sns {
                   width: 100%;
                   opacity: 0;
-                  transition: opacity 0.5s 0.3s; }
+                  transition: opacity 0.7s 0.5s; }
                   #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #right .sns::after {
                     content: '';
                     display: block;
@@ -297,14 +354,12 @@ font-family: 'Syncopate', sans-serif;
                   color: #999;
                   text-align: justify;
                   opacity: 0;
-                  transition: opacity 0.5s 0.3s; }
+                  transition: opacity 0.7s 0.5s; }
                 #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt #right span {
                   font: bold 15px/1 'Syncopate';
                   color: tan;
                   opacity: 0;
-                  transition: opacity 0.5s 0.3s; }
-              #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt.on {
-                flex-basis: 40%; }
+                  transition: opacity 0.5s 0.7s; }
             #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.on {
               flex-basis: 50%; }
               #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.on img {
