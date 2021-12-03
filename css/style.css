@@ -53,18 +53,22 @@ a {
         justify-content: space-between;
         align-items: center; }
         #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article {
+          width: 100%;
           height: 100%;
-          border: 1px solid salmon;
-          transition: 0.7s; }
+          transition: 1s; }
           #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.left {
+            flex-basis: 10%; }
+          #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.right {
             flex-basis: 10%; }
           #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt {
             flex-basis: 40%;
-            background: brown;
-            position: relative; }
+            background: #111;
+            position: relative;
+            transition-timing-function: ease-in-out; }
             #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt > div {
               width: 50%;
               height: 50%;
+              overflow: hidden;
               position: absolute;
               top: 0;
               left: 0;
@@ -78,10 +82,16 @@ a {
                 background: #111; }
             #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt.on {
               flex-basis: 40%; }
-          #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.right {
-            flex-basis: 10%; }
           #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.on {
             flex-basis: 50%; }
+            #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.on img {
+              transform: scale(1); }
+          #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article img {
+            width: 100%;
+            height: 105%;
+            object-fit: cover;
+            transform: scale(1.5);
+            transition: 1s; }
   #swiper .swiper-button-next {
     height: 50px;
     padding: 10px 0 0;
