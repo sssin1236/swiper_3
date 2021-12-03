@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@200&family=Genos:wght@200&family=Jura:wght@300&family=Montserrat:ital,wght@1,200&family=Syncopate&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +10,14 @@ ul, ol, li {
 a {
   text-decoration: none; }
 
+/*
+font-family: 'Abel', sans-serif;
+font-family: 'Dosis', sans-serif;
+font-family: 'Genos', sans-serif;
+font-family: 'Jura', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Syncopate', sans-serif;
+*/
 #swiper {
   width: 100%;
   height: 100vh;
@@ -68,8 +77,9 @@ a {
             position: relative;
             transition-timing-function: ease-in-out; }
             #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt > div {
-              width: 50%;
-              height: 50%;
+              width: 100%;
+              height: 100%;
+              padding: 50px;
               overflow: hidden;
               position: absolute;
               top: 0;
@@ -80,10 +90,22 @@ a {
                 opacity: 1; }
               #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt > div#left {
                 width: 100%;
-                height: 100%;
-                padding: 30px; }
-              #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt > div#right {
-                background: #111; }
+                height: 100%; }
+              #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt > div#right .nav {
+                width: 100%;
+                margin: 150px 0 200px; }
+                #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt > div#right .nav::after {
+                  content: '';
+                  display: block;
+                  clear: both; }
+                #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt > div#right .nav li {
+                  float: left;
+                  width: 50%; }
+                  #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt > div#right .nav li h1 {
+                    font: bold 24px/1 'Genos';
+                    color: #eee;
+                    letter-spacing: 1px;
+                    margin-bottom: 10px; }
             #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.txt.on {
               flex-basis: 40%; }
           #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article.on {
