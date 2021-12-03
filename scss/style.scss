@@ -43,8 +43,14 @@ font-family: 'Syncopate', sans-serif;
             position: relative;
             top: 0;
 
+            #header{
+                width: 10%; height: 100%;
+                float: left;
+            }
+
             .inner{
-                width: 100%; height: 100%;
+                float: right;
+                width: 90%; height: 100%;
                 opacity: 0.5;
                 z-index: 1;
                 transition: opacity 0.5s;
@@ -56,6 +62,9 @@ font-family: 'Syncopate', sans-serif;
 
             &[data-swiper-slide-index="0"]{
                 .inner{
+                    float: auto;
+                    width: 100%;
+
                     .wrap{
                         width: 100%; height: 100%;
                         overflow: hidden;
@@ -96,6 +105,73 @@ font-family: 'Syncopate', sans-serif;
 
                                     &.on{
                                         opacity: 1;
+                                    }
+
+                                    .menu{
+                                        width: 100%;
+                                        margin: 50px 0 20px;
+                                        padding: 10px 0;
+                                        border-top: 1px solid #999;
+                                        border-bottom: 1px solid #999;
+
+                                        &::after{
+                                            content: ''; display: block; clear: both;
+                                        }
+
+                                        a{
+                                            display: inline-block;
+                                            margin-right: 30px;
+                                            font: 15px/1 'Syncopate';
+                                            color: #eee;
+
+                                            &:last-child{
+                                                float: right;
+                                                margin-right: 0;
+                                                padding-top: 5px;
+                                            }
+                                        }
+                                    }
+
+                                    .list{
+                                        width: 100%;
+                                        margin-bottom: 30px;
+                                        position: relative;
+
+                                        li{
+                                            font: 22px/1 'Genos';
+                                            color: #bbb;
+                                            margin-bottom: 5px;
+
+                                            &:last-child{
+                                                position: absolute;
+                                                top: 0; right: 20px;
+
+                                                a{
+                                                    font: 22px/1 'Genos';
+                                                    color: #eee;
+
+                                                    &::before{
+                                                        content: '';
+                                                        display: block;
+                                                        width: 15px; height: 1px;
+                                                        background: #eee;
+                                                        position: absolute;
+                                                        top: 50%; right: -20px;
+                                                        transform: rotate(-45deg);
+                                                    }
+
+                                                    &::after{
+                                                        content: '';
+                                                        display: block;
+                                                        width: 10px; height: 10px;
+                                                        border-top: 1px solid #eee;
+                                                        border-right: 1px solid #eee;
+                                                        position: absolute;
+                                                        top: 5px; right: -20px;
+                                                    }
+                                                }
+                                            }
+                                        }
                                     }
                                 }
 
@@ -307,7 +383,7 @@ font-family: 'Syncopate', sans-serif;
                             }
 
                             img{
-                                width: 100%; height: 105%;
+                                width: 100%; height: 100%;
                                 object-fit: cover; 
                                 transform: scale(1.5);
                                 transition: 1s;
