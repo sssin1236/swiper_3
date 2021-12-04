@@ -466,16 +466,35 @@ font-family: 'Syncopate', sans-serif;
             height: 100%;
             padding: 20px 40px; }
             #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .tab > div .exp h2 {
-              font: bold 30px/1 'Abel';
-              color: #111;
+              font: bold 50px/1 'Abel';
+              color: #333;
               padding-top: 10px;
               border-top: 1px solid #555;
               margin-bottom: 40px; }
             #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .tab > div .exp span {
-              display: block;
-              width: 100%;
               font: 16px/1 'Abel';
               color: #555; }
+            #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .tab > div .exp h3 {
+              font: bold 24px/1 'Genos';
+              color: orange;
+              padding-top: 10px;
+              margin-top: 20px;
+              margin-bottom: 40px;
+              border-top: 1px solid #555; }
+            #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .tab > div .exp p {
+              width: 60%;
+              font: 15px/1.6 'Noto Sans Kr';
+              color: #333;
+              margin-bottom: 80px; }
+            #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .tab > div .exp b {
+              font: bold 300px/1 'Abel';
+              color: rgba(194, 194, 194, 0.603);
+              position: absolute;
+              bottom: 0;
+              right: 120px; }
+            #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .tab > div .exp a {
+              font: bold 18px/1 'Noto Sans Kr';
+              color: orange; }
   #swiper .swiper-button-next {
     height: 50px;
     padding: 10px 0 0;
