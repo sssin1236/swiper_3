@@ -40,20 +40,20 @@ font-family: 'Syncopate', sans-serif;
 
         .swiper-slide{
             width: 100% ; height: 100%;
-            padding: 40px 0;
+            padding: 40px 0 0px;
             position: relative;
             top: 0;
 
             #header{
-                width: 15%; height: 100%;
+                width: 10%; height: 100%;
                 float: left;
-                padding: 20px;
+                padding: 0px 20px;
                 border-right: 1px solid #111;
+                position: relative;
 
                 h1{
                     font: bold 40px/1 'Montserrat';
                     color: #111;
-                    margin: 30px 0;
 
                     &::after{
                         content: '';
@@ -61,14 +61,24 @@ font-family: 'Syncopate', sans-serif;
                         width: 20px; height: 1px;
                         background: #333;
                         position: absolute;
-                        top: 120px; left: 30px;
+                        top: 80px; left: 30px;
                     }
+                }
+
+                h2{
+                    font: bold 170px/1 'Abel';
+                    color: #111;
+                    transform: rotate(-90deg);
+                    transform-origin: left center;
+                    width: 500px;
+                    position: absolute;
+                    bottom: 30px; left: 50%;
                 }
             }
 
             .inner{
                 float: right;
-                width: 85%; height: 100%;
+                width: 90%; height: 100%;
                 overflow: hidden;
                 opacity: 0.5;
                 z-index: 1;
@@ -84,6 +94,14 @@ font-family: 'Syncopate', sans-serif;
 
                 #header{
                     border: none;
+
+                    h1{
+                        margin: 40px 0 20px;
+
+                        &::after{
+                            top: 120px;
+                        }
+                    }
                 }
 
                 .inner{
@@ -285,7 +303,7 @@ font-family: 'Syncopate', sans-serif;
 
                                     .nav{
                                         width: 100%; 
-                                        margin: 100px 0 120px;
+                                        margin: 50px 0 120px;
                                         opacity: 0;
                                         transition: opacity 0.7s 0.5s;
 
@@ -401,7 +419,7 @@ font-family: 'Syncopate', sans-serif;
                                         }
                                     }
 
-                                    h2{
+                                    >h2{
                                         font: bold 120px/1 'Syncopate';
                                         color: #eee;
                                         letter-spacing: 2px;
@@ -489,7 +507,7 @@ font-family: 'Syncopate', sans-serif;
         padding: 10px 0 0;
         position: absolute;
         top: auto;
-        bottom: 30px; left: calc(15% - 50px);
+        bottom: 30px; left: calc(10% - 50px);
 
         &::after{
             display: none;
@@ -530,7 +548,7 @@ font-family: 'Syncopate', sans-serif;
             width: auto; height: auto;
             background: transparent;
             border-radius: 0px;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
             opacity: 0.7;
             font: 15px/1 'Montserrat';
             color: #111;

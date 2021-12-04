@@ -74,3 +74,22 @@ function classActive(el){
     $(el).parent().find("article").find("div").removeClass("on");
     $(el).parent().find("article").find("#"+target).addClass("on");
 }
+
+// letter(".intro", "I", 5);
+
+function letter(selector, alpa, num){
+    const elem = $(selector);
+    const txt = elem.text().slice(alpa,[num]);
+
+    $(selector).empty();
+
+    for(let el of txt){
+        elem.append(
+            $("<span>")
+            .text(el)
+            .css({
+                display: "inline-block"
+            })
+        )
+    }
+}
