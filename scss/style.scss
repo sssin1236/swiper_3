@@ -181,7 +181,7 @@ font-family: 'Syncopate', sans-serif;
                                             display: inline-block;
                                             margin-right: 30px;
                                             font: 15px/1 'Syncopate';
-                                            color: #eee;
+                                            color: orange;
 
                                             &:last-child{
                                                 float: right;
@@ -321,7 +321,7 @@ font-family: 'Syncopate', sans-serif;
 
                                             >h1{
                                                 font: bold 24px/1 'Genos';
-                                                color: tan;
+                                                color: orange;
                                                 letter-spacing: 1px;
                                                 margin-bottom: 10px;
                                             }
@@ -354,7 +354,7 @@ font-family: 'Syncopate', sans-serif;
                                                     display: block;
                                                     width: 25px; height: 25px;
                                                     border-radius: 50%;
-                                                    border: 1px solid tan;
+                                                    border: 1px solid orange;
                                                     position: absolute;
                                                     top: 0; left: 0px;
                                                     transition: 0.5s;
@@ -388,20 +388,20 @@ font-family: 'Syncopate', sans-serif;
 
                                                 &:hover{
                                                     &::before{
-                                                        background: tan;
+                                                        background: orange;
                                                         width: 10px;
                                                         left: 9px;
                                                     }
                         
                                                     &::after{
-                                                        border-color: tan;
+                                                        border-color: orange;
                                                     }
                         
                                                     span{
                                                         &::before{
                                                             transform-origin: center center;
                                                             transform: rotate(-90deg);
-                                                            background: tan;
+                                                            background: orange;
                                                             left: 9px;
                                                         }
                                                     }
@@ -418,7 +418,7 @@ font-family: 'Syncopate', sans-serif;
 
                                         b{
                                             font: bold 24px/1 'Genos';
-                                            color: tan;
+                                            color: orange;
                                             margin-right: 10px;
                                         }
                                     }
@@ -460,7 +460,7 @@ font-family: 'Syncopate', sans-serif;
                                     >p{
                                         width: 80%;
                                         margin-top: 20px;
-                                        margin-bottom: 20px;
+                                        margin-bottom: 50px;
                                         font: 16px/1.5 'Noto Sans KR','Genos';
                                         color: #999;
                                         text-align: justify;
@@ -470,8 +470,9 @@ font-family: 'Syncopate', sans-serif;
 
                                     span{
                                         font: bold 15px/1 'Syncopate';
-                                        color: tan;
+                                        color: orange;
                                         opacity: 0;
+                                        cursor: pointer;
                                         transition: opacity 0.5s 0.7s;
                                     }
                                 }

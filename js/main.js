@@ -62,6 +62,7 @@ right.on("mouseenter", function(e){
     classActive(this);
 });
 
+
 function classActive(el){
     let isOn = $(el).hasClass("on");
     if(isOn) return;
@@ -74,6 +75,27 @@ function classActive(el){
     $(el).parent().find("article").find("div").removeClass("on");
     $(el).parent().find("article").find("#"+target).addClass("on");
 }
+
+const main = document.querySelector(".tab");
+const btns = main.querySelectorAll(".tabBox li");
+const boxs = main.querySelectorAll("div");
+
+console.log(btns);
+
+btns.forEach((btn, index)=>{
+    btn.addEventListener("click", e=>{
+        e.preventDefault();
+
+        for(let el of tabBoxs){
+            el.classList.remove("on");
+        }
+        boxs[index].classList.add("on");
+
+    });
+});
+
+
+
 
 // letter(".intro", "I", 5);
 
