@@ -640,6 +640,7 @@ font-family: 'Syncopate', sans-serif;
                 .inner{
                     .wrap{
                         width: 100%; height: 100%;
+                        padding-right: 20px;
                         position: relative;
                         display: flex;
                         align-items: center;
@@ -648,6 +649,57 @@ font-family: 'Syncopate', sans-serif;
                             flex: 1;
                             height: 100%;
                             position: relative;
+                            cursor: pointer;
+
+                            &:hover{
+                                &:nth-of-type(1){
+                                    .front{
+                                        i{
+                                            span{
+                                                opacity: 1;
+
+                                                &:nth-of-type(1){ top: 20px; right: 20px; }
+                                                &:nth-of-type(2){ top: 200px; right: 350px; }
+                                                &:nth-of-type(3){ top: 400px; right: 230px; }
+                                                &:nth-of-type(4){ top: 500px; right: 450px; }
+                                                &:nth-of-type(5){ top: 700px; right: 150px; }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &:nth-of-type(2){
+                                    .front{
+                                        i{
+                                            span{
+                                                opacity: 1;
+
+                                                &:nth-of-type(1){ bottom: 20px; left: 20px; }
+                                                &:nth-of-type(2){ bottom: 140px; left: 350px; }
+                                                &:nth-of-type(3){ bottom: 350px; left: 230px; }
+                                                &:nth-of-type(4){ bottom: 480px; left: 450px; }
+                                                &:nth-of-type(5){ bottom: 620px; left: 80px; }
+                                                &:nth-of-type(6){ bottom: 730px; left: 390px; }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &:nth-of-type(3){
+                                    .front{
+                                        i{
+                                            span{
+                                                opacity: 1;
+
+                                                &:nth-of-type(2){ top: 150px; left: 110px; }
+                                                &:nth-of-type(3){ top: 630px; left: 210px; }
+                                                &:nth-of-type(4){ top: 300px; left: 340px; }
+                                                &:nth-of-type(5){ top: 60px; left: 450px; }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
 
                             &:nth-of-type(1){
                                 .front{
@@ -655,11 +707,29 @@ font-family: 'Syncopate', sans-serif;
 
                                     i{
                                         span{
-                                            &:nth-of-type(1){ top: 20px; right: 20px; font-size: 180px; }
-                                            &:nth-of-type(2){ top: 200px; right:350px; }
-                                            &:nth-of-type(3){ top: 400px; right: 230px; }
-                                            &:nth-of-type(4){ top: 500px; right: 450px; }
-                                            &:nth-of-type(5){ top: 700px; right: 100px; }
+                                            opacity: 0;
+
+                                            &:nth-of-type(1){ 
+                                                top: 20px; right: 20px; 
+                                                font-size: 180px; 
+                                                opacity: 1; 
+                                            }
+                                            &:nth-of-type(2){ 
+                                                top: 10px; right: 450px; 
+                                                transition: opacity 0.3s 0.3s, top 6s, right 6s;
+                                            }
+                                            &:nth-of-type(3){ 
+                                                top: 580px; right: 20px; 
+                                                transition: opacity 0.3s 0.3s, top 4s, right 8s;
+                                            }
+                                            &:nth-of-type(4){ 
+                                                top: 700px; right: 250px; 
+                                                transition: opacity 0.3s 0.3s, top 5s, right 9s;
+                                            }
+                                            &:nth-of-type(5){
+                                                top: 70px; right: 0px; 
+                                                transition: opacity 0.3s 0.3s, top 6s, right 3s;
+                                            }
                                         }
                                     }
                                 }
@@ -669,12 +739,39 @@ font-family: 'Syncopate', sans-serif;
                                 .front i{
 
                                     span{
-                                        &:nth-of-type(1){ color: #557dbf; }
-                                        &:nth-of-type(2){ color: #ea4435; }
-                                        &:nth-of-type(3){ color: #f9bc14; }
-                                        &:nth-of-type(4){ color: #557dbf; }
-                                        &:nth-of-type(5){ color: #35a851; }
-                                        &:nth-of-type(6){ color: #ea4435; }
+                                        opacity: 0;
+
+                                        &:nth-of-type(1){ 
+                                            color: #557dbf; 
+                                            bottom: 20px; left: 20px; 
+                                            font-size: 180px; 
+                                            opacity: 1; 
+                                        }
+                                        &:nth-of-type(2){ 
+                                            color: #ea4435; 
+                                            bottom: 450px; left: 450px; 
+                                            transition: opacity 0.3s 0.3s, bottom 3s, left 4s;
+                                        }
+                                        &:nth-of-type(3){
+                                            color: #f9bc14; 
+                                            bottom: 580px; left: 20px; 
+                                            transition: opacity 0.3s 0.3s, bottom 4s, left 8s;
+                                        }
+                                        &:nth-of-type(4){ 
+                                            color: #557dbf;
+                                            bottom: 700px; left: 250px; 
+                                            transition: opacity 0.3s 0.3s, bottom 5s, left 3s; 
+                                        }
+                                        &:nth-of-type(5){ 
+                                            color: #35a851; 
+                                            bottom: 70px; left: 0px; 
+                                            transition: opacity 0.3s 0.3s, bottom 2s, left 5s;
+                                        }
+                                        &:nth-of-type(6){ 
+                                            color: #ea4435; 
+                                            bottom: 0px; left: 0px; 
+                                            transition: opacity 0.3s 0.3s, bottom 3s, left 5s;
+                                        }
                                     }
                                     
                                 }
@@ -686,6 +783,33 @@ font-family: 'Syncopate', sans-serif;
 
                                     i{
                                         color: #361f20;
+
+                                        span{
+                                            opacity: 0;
+
+                                            &:nth-of-type(1){ 
+                                                top: 50%; left: 20px; 
+                                                transform: translateY(-50%);
+                                                font-size: 180px; 
+                                                opacity: 1; 
+                                            }
+                                            &:nth-of-type(2){ 
+                                                top: 450px; left: 150px; 
+                                                transition: opacity 0.3s 0.3s, top 2s, left 5s;
+                                            }
+                                            &:nth-of-type(3){ 
+                                                top: 280px; left: 210px; 
+                                                transition: opacity 0.3s 0.3s, top 3s, left 1s;
+                                            }
+                                            &:nth-of-type(4){ 
+                                                top: 700px; left: 350px; 
+                                                transition: opacity 0.3s 0.3s, top 5s, left 3s;
+                                            }
+                                            &:nth-of-type(5){
+                                                top: 70px; left: 0px; 
+                                                transition: opacity 0.3s 0.3s, top 1s, left 3s;
+                                            }
+                                        }
                                     }
                                 }
                             }
