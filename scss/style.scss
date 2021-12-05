@@ -716,19 +716,19 @@ font-family: 'Syncopate', sans-serif;
                                             }
                                             &:nth-of-type(2){ 
                                                 top: 10px; right: 450px; 
-                                                transition: opacity 0.3s 0.3s, top 6s, right 6s;
+                                                transition: opacity 0.3s 0.1s, top 1.5s, right 1.5s;
                                             }
                                             &:nth-of-type(3){ 
                                                 top: 580px; right: 20px; 
-                                                transition: opacity 0.3s 0.3s, top 4s, right 8s;
+                                                transition: opacity 0.3s 0.1s, top 1.4s, right 1.8s;
                                             }
                                             &:nth-of-type(4){ 
                                                 top: 300px; right: 600px; 
-                                                transition: opacity 0.3s 0.3s, top 5s, right 2s;
+                                                transition: opacity 0.3s 0.1s, top 0.5s, right 0.2s;
                                             }
                                             &:nth-of-type(5){
-                                                top: 70px; right: 0px; 
-                                                transition: opacity 0.3s 0.3s, top 6s, right 3s;
+                                                top: 270px; right: 0px; 
+                                                transition: opacity 0.3s 0.1s, top 0.9s, right 1.6s;
                                             }
                                         }
                                     }
