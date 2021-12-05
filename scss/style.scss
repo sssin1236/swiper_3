@@ -114,7 +114,6 @@ font-family: 'Syncopate', sans-serif;
                         width: 100%; height: 100%;
                         position: relative;
                         display: flex;
-                        justify-content: space-between;
                         align-items: center;    
 
                         article{
@@ -630,6 +629,77 @@ font-family: 'Syncopate', sans-serif;
                                 a{
                                     font: bold 18px/1 'Noto Sans Kr';
                                     color: orange;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &[data-swiper-slide-index="2"]{
+                .inner{
+                    .wrap{
+                        width: 100%; height: 100%;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+
+                        article{
+                            flex: 1;
+                            height: 100%;
+                            position: relative;
+
+                            &:nth-of-type(1){
+                                .front{
+                                    background: #03cf5d;
+
+                                    i{
+                                        span{
+                                            &:nth-of-type(1){ top: 20px; right: 20px; font-size: 180px; }
+                                            &:nth-of-type(2){ top: 200px; right:350px; }
+                                            &:nth-of-type(3){ top: 400px; right: 230px; }
+                                            &:nth-of-type(4){ top: 500px; right: 450px; }
+                                            &:nth-of-type(5){ top: 700px; right: 100px; }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &:nth-of-type(2){
+                                .front i{
+
+                                    span{
+                                        &:nth-of-type(1){ color: #557dbf; }
+                                        &:nth-of-type(2){ color: #ea4435; }
+                                        &:nth-of-type(3){ color: #f9bc14; }
+                                        &:nth-of-type(4){ color: #557dbf; }
+                                        &:nth-of-type(5){ color: #35a851; }
+                                        &:nth-of-type(6){ color: #ea4435; }
+                                    }
+                                    
+                                }
+                            }
+
+                            &:nth-of-type(3){
+                                .front{
+                                    background: #f9bc14;
+
+                                    i{
+                                        color: #361f20;
+                                    }
+                                }
+                            }
+
+                            .front{
+                                width: 100%; height: 100%;
+
+                                i{
+                                    font: bold 150px/1 'arial';
+                                    color: #fff;
+
+                                    span{
+                                        position: absolute;
+                                    }
                                 }
                             }
                         }

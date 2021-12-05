@@ -97,7 +97,9 @@ btns.forEach((btn, index)=>{
 
 
 
-// letter(".intro", "I", 5);
+letter(".naver", "N", 5);
+letter(".google", "G", 6);
+letter(".kakao", "K", 5);
 
 function letter(selector, alpa, num){
     const elem = $(selector);

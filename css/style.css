@@ -99,7 +99,6 @@ font-family: 'Syncopate', sans-serif;
           height: 100%;
           position: relative;
           display: flex;
-          justify-content: space-between;
           align-items: center; }
           #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article {
             width: 100%;
@@ -502,6 +501,58 @@ font-family: 'Syncopate', sans-serif;
             #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .tab > div .exp a {
               font: bold 18px/1 'Noto Sans Kr';
               color: orange; }
+      #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .wrap {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center; }
+        #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .wrap article {
+          flex: 1;
+          height: 100%;
+          position: relative; }
+          #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .wrap article:nth-of-type(1) .front {
+            background: #03cf5d; }
+            #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .wrap article:nth-of-type(1) .front i span:nth-of-type(1) {
+              top: 20px;
+              right: 20px;
+              font-size: 180px; }
+            #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .wrap article:nth-of-type(1) .front i span:nth-of-type(2) {
+              top: 200px;
+              right: 350px; }
+            #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .wrap article:nth-of-type(1) .front i span:nth-of-type(3) {
+              top: 400px;
+              right: 230px; }
+            #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .wrap article:nth-of-type(1) .front i span:nth-of-type(4) {
+              top: 500px;
+              right: 450px; }
+            #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .wrap article:nth-of-type(1) .front i span:nth-of-type(5) {
+              top: 700px;
+              right: 100px; }
+          #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .wrap article:nth-of-type(2) .front i span:nth-of-type(1) {
+            color: #557dbf; }
+          #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .wrap article:nth-of-type(2) .front i span:nth-of-type(2) {
+            color: #ea4435; }
+          #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .wrap article:nth-of-type(2) .front i span:nth-of-type(3) {
+            color: #f9bc14; }
+          #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .wrap article:nth-of-type(2) .front i span:nth-of-type(4) {
+            color: #557dbf; }
+          #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .wrap article:nth-of-type(2) .front i span:nth-of-type(5) {
+            color: #35a851; }
+          #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .wrap article:nth-of-type(2) .front i span:nth-of-type(6) {
+            color: #ea4435; }
+          #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .wrap article:nth-of-type(3) .front {
+            background: #f9bc14; }
+            #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .wrap article:nth-of-type(3) .front i {
+              color: #361f20; }
+          #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .wrap article .front {
+            width: 100%;
+            height: 100%; }
+            #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .wrap article .front i {
+              font: bold 150px/1 'arial';
+              color: #fff; }
+              #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner .wrap article .front i span {
+                position: absolute; }
   #swiper .swiper-button-next {
     height: 50px;
     padding: 10px 0 0;
