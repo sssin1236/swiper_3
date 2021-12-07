@@ -104,13 +104,9 @@ const formBox = [];
 form.each((index, box)=>{
     formBox.push(box);
 })
+console.log(formBox);
 
-const article1 = formBox[3];
-const article2 = formBox[4];
-const article3 = formBox[5];
-
-article1.on("click", function(){
-    console.log("hello");
+formBox.forEach((data, index)=>{
 })
 
 //두번째 스와이퍼 탭메뉴 이벤트 오류
