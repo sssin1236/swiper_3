@@ -99,13 +99,19 @@ function letter(selector, alpa, num){
 }
 
 const form = $(".formBox");
-console.log(form);
+const formBox = [];
 
-form.forEach((box, index)=>{
-    
+form.each((index, box)=>{
+    formBox.push(box);
 })
 
+const article1 = formBox[3];
+const article2 = formBox[4];
+const article3 = formBox[5];
 
+article1.on("click", function(){
+    console.log("hello");
+})
 
 //두번째 스와이퍼 탭메뉴 이벤트 오류
 
