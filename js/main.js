@@ -41,16 +41,6 @@ for(let el of navi){
     })
 }
 
-function activation(){
-    let item = document.querySelector(".swiper-slide-active");
-    let i = item.getAttribute("data-swiper-slide-index");
-
-    for(let el of bgs){
-        el.classList.remove("on");
-    }
-    bgs[i].classList.add("on");
-}
-
 const left = $(".left");
 const right = $(".right");
 
@@ -62,6 +52,21 @@ right.on("mouseenter", function(e){
     classActive(this);
 });
 
+
+letter(".naver", "N", 5);
+letter(".google", "G", 6);
+letter(".kakao", "K", 5);
+
+
+function activation(){
+    let item = document.querySelector(".swiper-slide-active");
+    let i = item.getAttribute("data-swiper-slide-index");
+
+    for(let el of bgs){
+        el.classList.remove("on");
+    }
+    bgs[i].classList.add("on");
+}
 
 function classActive(el){
     let isOn = $(el).hasClass("on");
@@ -75,6 +80,34 @@ function classActive(el){
     $(el).parent().find("article").find("div").removeClass("on");
     $(el).parent().find("article").find("#"+target).addClass("on");
 }
+
+function letter(selector, alpa, num){
+    const elem = $(selector);
+    const txt = elem.text().slice(alpa,[num]);
+
+    $(selector).empty();
+
+    for(let el of txt){
+        elem.append(
+            $("<span>")
+            .text(el)
+            .css({
+                display: "inline-block"
+            })
+        )
+    }
+}
+
+const form = $(".formBox");
+console.log(form);
+
+form.forEach((box, index)=>{
+    
+})
+
+
+
+//두번째 스와이퍼 탭메뉴 이벤트 오류
 
 const main = document.querySelector(".tab");
 const btns = main.querySelectorAll(".tabBox li");
@@ -96,24 +129,3 @@ btns.forEach((btn, index)=>{
 
 
 
-
-letter(".naver", "N", 5);
-letter(".google", "G", 6);
-letter(".kakao", "K", 5);
-
-function letter(selector, alpa, num){
-    const elem = $(selector);
-    const txt = elem.text().slice(alpa,[num]);
-
-    $(selector).empty();
-
-    for(let el of txt){
-        elem.append(
-            $("<span>")
-            .text(el)
-            .css({
-                display: "inline-block"
-            })
-        )
-    }
-}
