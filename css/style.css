@@ -414,12 +414,15 @@ font-family: 'Syncopate', sans-serif;
           display: flex;
           justify-content: space-between;
           align-items: center;
-          margin-bottom: 50px; }
+          margin-bottom: 40px; }
           #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .tab .tabBox li {
             flex: calc(100% / 4); }
             #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .tab .tabBox li > a {
               display: block;
               width: 100%;
+              padding: 0px 20px 10px;
+              margin-top: 5px;
+              transition: 0.7s;
               overflow: hidden; }
               #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .tab .tabBox li > a span {
                 font: bold 70px/1 'Genos';
@@ -433,7 +436,7 @@ font-family: 'Syncopate', sans-serif;
                 color: #333;
                 margin-bottom: 30px; }
               #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .tab .tabBox li > a img {
-                width: 50%;
+                width: 60%;
                 height: 150px;
                 object-fit: cover;
                 object-position: top;
@@ -442,6 +445,8 @@ font-family: 'Syncopate', sans-serif;
               #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .tab .tabBox li > a nav {
                 font: 18px/1 'Abel';
                 color: #555; }
+              #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .tab .tabBox li > a:hover {
+                box-shadow: -10px 20px 40px rgba(0, 0, 0, 0.1); }
         #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner .tab > div {
           width: 100%;
           height: 50%;
@@ -665,7 +670,55 @@ font-family: 'Syncopate', sans-serif;
         #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .wrap > div {
           flex-basis: 50%;
           padding: 0px 20px;
-          position: relative; }
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column; }
+          #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .wrap > div.list h2 {
+            padding: 20px 0;
+            font: bold 30px/1 'Abel';
+            color: #333;
+            border-top: 2px solid #333; }
+          #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .wrap > div.list .list {
+            width: 100%; }
+            #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .wrap > div.list .list li {
+              width: 100%;
+              padding: 20px 0;
+              border-bottom: 1px solid #999;
+              cursor: pointer; }
+              #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .wrap > div.list .list li:first-child {
+                border-top: 1px solid #999; }
+              #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .wrap > div.list .list li a {
+                width: 100%;
+                position: relative; }
+                #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .wrap > div.list .list li a::after {
+                  content: '';
+                  display: block;
+                  clear: both; }
+                #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .wrap > div.list .list li a .pic {
+                  float: left;
+                  width: 250px;
+                  height: 100%;
+                  margin-right: 30px;
+                  background: #111; }
+                  #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .wrap > div.list .list li a .pic video {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover; }
+                #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .wrap > div.list .list li a .title {
+                  display: inline-block;
+                  height: 100%; }
+                  #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .wrap > div.list .list li a .title h3 {
+                    font: bold 18px/1 'Montserrat';
+                    color: orange;
+                    margin-bottom: 5px; }
+                  #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .wrap > div.list .list li a .title span {
+                    font: 15px/1 'Abel';
+                    color: #333; }
+                  #swiper .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner .wrap > div.list .list li a .title nav {
+                    font: bold 18px/1 'Genos';
+                    color: #111;
+                    margin-top: 70px; }
   #swiper .swiper-button-next {
     height: 50px;
     padding: 10px 0 0;
