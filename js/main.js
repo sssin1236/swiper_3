@@ -27,6 +27,8 @@ const bgs = document.querySelectorAll(".bg li");
 const prev = document.querySelector(".swiper-button-prev");
 const next = document.querySelector(".swiper-button-next");
 const navi = document.querySelectorAll(".swiper-pagination span");
+const left = $(".left");
+const right = $(".right");
 
 next.addEventListener("click", activation);
 prev.addEventListener("click", activation);
@@ -40,9 +42,6 @@ for(let el of navi){
         swiper.on("slideChangeTransitionEnd", activation);
     })
 }
-
-const left = $(".left");
-const right = $(".right");
 
 left.on("mouseenter", function(e){
     classActive(this);
@@ -111,20 +110,14 @@ formBox.forEach((data, index)=>{
 
 //두번째 스와이퍼 탭메뉴 이벤트 오류
 
-const main = document.querySelector(".tab");
-const btns = main.querySelectorAll(".tabBox li");
-const boxs = main.querySelectorAll("div");
-
-console.log(btns);
+const btns = document.querySelectorAll(".portfolio .tabBox li");
+const boxs = document.querySelectorAll(".tab div");
 
 btns.forEach((btn, index)=>{
     btn.addEventListener("click", e=>{
-        e.preventDefault();
-
-        for(let el of tabBoxs){
-            el.classList.remove("on");
-        }
-        boxs[index].classList.add("on");
+        let i = index%4;
+        
+        
 
     });
 });
