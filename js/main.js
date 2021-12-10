@@ -117,7 +117,8 @@ btns.forEach((btn, index)=>{
     btn.addEventListener("click", e=>{
         let i = index%4;
         
-        
+        for(let el of btns) el.children.classList.remove("on");
+        btns[i].children.classList.add("on");
 
     });
 });

@@ -514,13 +514,13 @@ font-family: 'Syncopate', sans-serif;
 
                             li{
                                 flex: calc(100% / 4);
+                                transition: 0.7s;
 
                                 >a{
                                     display: block;
                                     width: 100%;
                                     padding: 0px 20px 10px;
                                     margin-top: 5px;
-                                    transition: 0.7s;
                                     overflow: hidden;
     
                                     span{
@@ -553,10 +553,13 @@ font-family: 'Syncopate', sans-serif;
                                         color: #555;
                                     }
 
-                                    &:hover{
-                                        
+                                }
+                                &:hover{
                                     box-shadow: -10px 20px 40px rgba(0,0,0, .1);
-                                    }
+                                }
+
+                                &.on{
+                                    box-shadow: -10px 20px 40px rgba(0,0,0, .1);
                                 }
                             }
                         }
