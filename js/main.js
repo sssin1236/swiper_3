@@ -60,7 +60,7 @@ letter(".kakao", "K", 5);
 
 function activation(){
     let item = document.querySelector(".swiper-slide-active");
-    let i = item.getAttribute("data-swiper-slide-index");
+    let i = item.getAttribute("data-custom-index");
 
     for(let el of bgs){
         el.classList.remove("on");
