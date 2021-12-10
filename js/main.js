@@ -1,7 +1,7 @@
 const menu = ["PROFILE", "PORTFOLIO", "CONTACT", "PREVIEW"];
 
 const swiper = new Swiper("#swiper", {
-    loop: true,
+    loop: false,
     slidesPerView: "auto",
     centeredSlides: true,
     spaceBetween: 50,
@@ -97,29 +97,18 @@ function letter(selector, alpa, num){
     }
 }
 
-const form = $(".formBox");
-const formBox = [];
 
-form.each((index, box)=>{
-    formBox.push(box);
-})
-console.log(formBox);
-
-formBox.forEach((data, index)=>{
-})
-
-//두번째 스와이퍼 탭메뉴 이벤트 오류
-
-const btns = document.querySelectorAll(".portfolio .tabBox li");
-const boxs = document.querySelectorAll(".tab div");
+const btns = document.querySelectorAll(".portfolio .tabBox li a");
+const boxs = document.querySelectorAll(".tab .boxs>div");
 
 btns.forEach((btn, index)=>{
     btn.addEventListener("click", e=>{
-        let i = index%4;
-        
-        for(let el of btns) el.children.classList.remove("on");
-        btns[i].children.classList.add("on");
 
+        for(let el of btns) el.classList.remove("on");
+        btns[index].classList.add("on");
+
+        for(let i of boxs) i.classList.remove("on");
+        boxs[index].classList.add("on");
     });
 });
 
