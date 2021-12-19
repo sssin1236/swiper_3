@@ -781,6 +781,25 @@ font-family: 'Syncopate', sans-serif;
                                     top: 30px; left: 50%;
                                     transform: translateX(-50%);
                                     border: 1px solid #557dbf;
+
+                                    h2{
+                                        color: #557dbf;
+                                    }
+
+                                    form{
+                                        label{
+                                            color: #557dbf;
+                                        }
+
+                                        input, textarea{
+                                            background: #557ebf59;
+                                        }
+
+                                        input[type=submit]{
+                                            background: #557dbf;
+                                            color: #fff;
+                                        }
+                                    }
                                 }
                             }
 
@@ -825,6 +844,18 @@ font-family: 'Syncopate', sans-serif;
                                     top: 50%; right: 30px;
                                     transform: translateY(-50%);
                                     border: 1px solid #382425be;
+
+                                    h2{
+                                        color: #361f20;
+                                    }
+
+                                    form{
+
+                                        input[type=submit]{
+                                            background: #361f20;
+                                            color: #fff;
+                                        }
+                                    }
                                 }
                             }
 
@@ -843,10 +874,10 @@ font-family: 'Syncopate', sans-serif;
 
                             .back{
                                 width: 90%; height: 70%;
-                                padding: 50px;
+                                padding: 30px 50px;
                                 position: absolute;
                                 border-radius: 5px;
-                                box-shadow: -5px -5px 30px rgba(0,0,0, .09);
+                                box-shadow: -5px -5px 30px rgba(0,0,0, .1);
                                 backdrop-filter: blur(10px);
                                 clip-path: circle(5% at 50% 50%);
                                 opacity: 0;
@@ -855,7 +886,6 @@ font-family: 'Syncopate', sans-serif;
                                 h2{
                                     font: bold 32px/1 'arial';
                                     color: #fff;
-                                    margin-bottom: 50px;
                                 }
 
                                 form{
@@ -863,7 +893,42 @@ font-family: 'Syncopate', sans-serif;
                                     display: flex;
                                     flex-direction: column;
                                     justify-content: center;
-                                    align-items: center;
+
+                                    label{
+                                        font: bold 16px/1 'Noto Sans KR';
+                                        color: #fff;
+                                        margin-bottom: 10px;
+                                    }
+
+                                    input{
+                                        width: 100%; height: 20px;
+                                        border: none;
+                                        padding: 20px;
+                                        border-radius: 5px;
+                                        background: rgba(255, 255, 255, 0.7);
+                                        margin-bottom: 20px;
+                                        color: #333;
+                                    }
+
+                                    input[type=submit]{
+                                        width: 100%; height: 40px;
+                                        padding: 10px;
+                                        font-size: 18px;
+                                        font-weight: bold;
+                                        color: #03cf5d;
+                                        background: #eee;
+                                    }
+
+                                    textarea{
+                                        width: 100%; height: 130px;
+                                        border: none;
+                                        padding: 10px;
+                                        border-radius: 5px;
+                                        background: rgba(255, 255, 255, 0.7);
+                                        margin-bottom: 40px;
+                                        color: #333;
+                                        resize: none;
+                                    }
                                 }
                             }
 
