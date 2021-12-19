@@ -748,6 +748,13 @@ font-family: 'Syncopate', sans-serif;
                                 }
                             }
 
+                            &.on{
+                                .back{
+                                    clip-path: circle(100% at 50% 50%);
+                                    opacity: 1;
+                                }
+                            }
+
                             &:nth-of-type(1){
                                 .front{
                                     background: #03cf5d;
@@ -779,6 +786,12 @@ font-family: 'Syncopate', sans-serif;
                                             }
                                         }
                                     }
+                                }
+
+                                .back{
+                                    bottom: 30px; left: 50%;
+                                    transform: translateX(-50%);
+                                    border: 1px solid #eee;
                                 }
                             }
 
@@ -822,6 +835,12 @@ font-family: 'Syncopate', sans-serif;
                                     }
                                     
                                 }
+
+                                .back{
+                                    top: 30px; left: 50%;
+                                    transform: translateX(-50%);
+                                    border: 1px solid #557dbf;
+                                }
                             }
 
                             &:nth-of-type(3){
@@ -859,6 +878,13 @@ font-family: 'Syncopate', sans-serif;
                                         }
                                     }
                                 }
+
+                                .back{
+                                    width: 65%; height: 90%;
+                                    top: 50%; right: 30px;
+                                    transform: translateY(-50%);
+                                    border: 1px solid #382425be;
+                                }
                             }
 
                             .front{
@@ -872,6 +898,18 @@ font-family: 'Syncopate', sans-serif;
                                         position: absolute;
                                     }
                                 }
+                            }
+
+                            .back{
+                                width: 90%; height: 70%;
+                                padding: 50px;
+                                position: absolute;
+                                border-radius: 5px;
+                                box-shadow: -5px -5px 30px rgba(0,0,0, .09);
+                                backdrop-filter: blur(10px);
+                                clip-path: circle(5% at 50% 50%);
+                                opacity: 0;
+                                transition: 0.7s;
                             }
                         }
                     }
