@@ -57,6 +57,44 @@ letter(".google", "G", 6);
 letter(".kakao", "K", 5);
 
 
+
+// 2번째 스와이퍼 탭 박스
+
+const btns = document.querySelectorAll(".portfolio .tabBox li a");
+const boxs = document.querySelectorAll(".tab .boxs>div");
+
+btns.forEach((btn, index)=>{
+    btn.addEventListener("click", e=>{
+
+        for(let el of btns) el.classList.remove("on");
+        btns[index].classList.add("on");
+
+        for(let i of boxs) i.classList.remove("on");
+        boxs[index].classList.add("on");
+    });
+});
+
+//3번째 스와이퍼 폼요소
+
+const contact = document.querySelector(".contact")
+const forms = contact.querySelectorAll(".formBox .front");
+
+forms.forEach((box, index)=>{
+    box.addEventListener("click", e=>{
+        forms[index].closest("article").classList.toggle("on");
+    });
+});
+
+swiper.on("slideChangeTransitionEnd", e=>{
+    let isOn = contact.classList.contains(".swiper-slide-active");
+
+    if(!isOn){
+        for(let el of forms) el.closest("article").classList.remove("on");
+    }
+})
+
+
+
 function activation(){
     let item = document.querySelector(".swiper-slide-active");
     let i = item.getAttribute("data-custom-index");
@@ -96,27 +134,3 @@ function letter(selector, alpa, num){
         )
     }
 }
-
-
-const btns = document.querySelectorAll(".portfolio .tabBox li a");
-const boxs = document.querySelectorAll(".tab .boxs>div");
-
-btns.forEach((btn, index)=>{
-    btn.addEventListener("click", e=>{
-
-        for(let el of btns) el.classList.remove("on");
-        btns[index].classList.add("on");
-
-        for(let i of boxs) i.classList.remove("on");
-        boxs[index].classList.add("on");
-    });
-});
-
-
-const forms = document.querySelectorAll(".contact .formBox .front");
-
-forms.forEach((box, index)=>{
-    box.addEventListener("click", e=>{
-        forms[index].closest("article").classList.toggle("on");
-    });
-});
