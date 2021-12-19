@@ -11,7 +11,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script defer src="js/main.js"></script>
+    <script defer src="js/form.js"></script>
 </head>
 <body>
     <section id="swiper">
@@ -223,33 +225,27 @@
                                 <i class="naver">NAVER</i>
                             </div>
                             <div class="back">
-                                <form action="/" method="post">
-                                    <feldset>
-                                        <legend class="h">네이버 이메일 전송 폼 양식</legend>
-                                        
-                                        <h2>NAVER</h2>
-                                        <div class="name">
-                                            <label for="name">성함</label>
-                                            <input type="text" name="name" id="name">
-                                        </div>
+                                <h2>NAVER</h2>
 
-                                        <div class="email">
-                                            <label for="emaile">이메일 주소</label>
-                                            <input type="email" name="email" id="email">
-                                        </div>
+                                <form id="contact-form" action="/" method="post">
 
-                                        <div class="phon">
-                                            <label for="phon">연락처</label>
-                                            <input type="number" name="phon" id="phon">
-                                        </div>
+                                    <legend class="h">네이버 이메일 전송 폼 양식</legend>
 
-                                        <div class="comments">
-                                            <label for="commtens">남기실 말씀</label>
-                                            <textarea name="comments" id="commtens" cols="30" rows="10"></textarea>
-                                        </div>
+                                    <input type="hidden" name="contact_number">
 
-                                        <input type="submit" value="전송">
-                                    </feldset>
+                                    <label for="name">보내는 분</label>
+                                    <input type="text" name="to_name" id="name" required placeholder="이름을 입력해주세요.">
+                                    
+                                    <label for="phon">연락처</label>
+                                    <input type="text" name="contact" id="phon" required placeholder="연락처를 입력해주세요.">
+
+                                    <label for="emaile">이메일 주소</label>
+                                    <input type="email" name="form_name" id="email" required placeholder="이메일 주소를 입력해주세요.">
+
+                                    <label for="commtens">메세지</label>
+                                    <textarea name="message_html" id="commtens" cols="30" rows="10" required placeholder="문의하실 내용을 입력해주세요."></textarea>
+
+                                    <input type="submit" value="전송">
                                 </form>
                             </div>
                         </article>
@@ -258,32 +254,27 @@
                                 <i class="google">Google</i>
                             </div>
                             <div class="back">
-                                <form action="/" method="post">
-                                    <feldset>
-                                        <legend class="h">구글 이메일 전송 폼 양식</legend>
-                                        
-                                        <h2>GOOGLE</h2>
-                                        <div class="name">
-                                            <label for="name">성함</label>
-                                            <input type="text" name="name" id="name">
-                                        </div>
+                                <h2>NAVER</h2>
 
-                                        <div class="email">
-                                            <label for="emaile">이메일 주소</label>
-                                            <input type="email" name="email" id="email">
-                                        </div>
+                                <form id="contact-form" action="/" method="post">
 
-                                        <div class="phon">
-                                            <label for="phon">연락처</label>
-                                            <input type="number" name="phon" id="phon">
-                                        </div>
+                                    <legend class="h">네이버 이메일 전송 폼 양식</legend>
 
-                                        <div class="comments">
-                                            <label for="commtens">남기실 말씀</label>
-                                            <textarea name="comments" id="commtens" cols="30" rows="10"></textarea>
-                                        </div>
-                                        <input type="submit" value="전송">
-                                    </feldset>
+                                    <input type="hidden" name="contact_number">
+
+                                    <label for="name">보내는 분</label>
+                                    <input type="text" name="to_name" id="name" required placeholder="이름을 입력해주세요.">
+                                    
+                                    <label for="phon">연락처</label>
+                                    <input type="text" name="contact" id="phon" required placeholder="연락처를 입력해주세요.">
+
+                                    <label for="emaile">이메일 주소</label>
+                                    <input type="email" name="form_name" id="email" required placeholder="이메일 주소를 입력해주세요.">
+
+                                    <label for="commtens">메세지</label>
+                                    <textarea name="message_html" id="commtens" cols="30" rows="10" required placeholder="문의하실 내용을 입력해주세요."></textarea>
+
+                                    <input type="submit" value="전송">
                                 </form>
                             </div>
                         </article>
@@ -292,32 +283,27 @@
                                 <i class="kakao">KAKAO</i>
                             </div>
                             <div class="back">
-                                <form action="/" method="post">
-                                    <feldset>
-                                        <legend class="h">카카오톡 이메일 전송 폼 양식</legend>
-                                        
-                                        <h2>KAKAO TALK</h2>
-                                        <div class="name">
-                                            <label for="name">성함</label>
-                                            <input type="text" name="name" id="name">
-                                        </div>
+                                <h2>NAVER</h2>
 
-                                        <div class="email">
-                                            <label for="emaile">이메일 주소</label>
-                                            <input type="email" name="email" id="email">
-                                        </div>
+                                <form id="contact-form" action="/" method="post">
 
-                                        <div class="phon">
-                                            <label for="phon">연락처</label>
-                                            <input type="number" name="phon" id="phon">
-                                        </div>
+                                    <legend class="h">네이버 이메일 전송 폼 양식</legend>
 
-                                        <div class="comments">
-                                            <label for="commtens">남기실 말씀</label>
-                                            <textarea name="comments" id="commtens" cols="30" rows="10"></textarea>
-                                        </div>
-                                        <input type="submit" value="전송">
-                                    </feldset>
+                                    <input type="hidden" name="contact_number">
+
+                                    <label for="name">보내는 분</label>
+                                    <input type="text" name="to_name" id="name" required placeholder="이름을 입력해주세요.">
+                                    
+                                    <label for="phon">연락처</label>
+                                    <input type="text" name="contact" id="phon" required placeholder="연락처를 입력해주세요.">
+
+                                    <label for="emaile">이메일 주소</label>
+                                    <input type="email" name="form_name" id="email" required placeholder="이메일 주소를 입력해주세요.">
+
+                                    <label for="commtens">메세지</label>
+                                    <textarea name="message_html" id="commtens" cols="30" rows="10" required placeholder="문의하실 내용을 입력해주세요."></textarea>
+
+                                    <input type="submit" value="전송">
                                 </form>
                             </div>
                         </article>
