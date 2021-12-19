@@ -113,4 +113,10 @@ btns.forEach((btn, index)=>{
 });
 
 
+const forms = document.querySelectorAll(".contact .formBox .front");
 
+forms.forEach((box, index)=>{
+    box.addEventListener("click", e=>{
+        forms[index].closest("article").classList.toggle("on");
+    });
+});

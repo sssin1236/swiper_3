@@ -917,6 +917,7 @@ font-family: 'Syncopate', sans-serif;
                                         font-weight: bold;
                                         color: #03cf5d;
                                         background: #eee;
+                                        cursor: pointer;
                                     }
 
                                     textarea{
@@ -925,6 +926,7 @@ font-family: 'Syncopate', sans-serif;
                                         padding: 10px;
                                         border-radius: 5px;
                                         background: rgba(255, 255, 255, 0.7);
+                                        outline: none;
                                         margin-bottom: 40px;
                                         color: #333;
                                         resize: none;
@@ -986,6 +988,7 @@ font-family: 'Syncopate', sans-serif;
                                 .back{
                                     clip-path: circle(100% at 50% 50%);
                                     opacity: 1;
+                                    z-index: 5;
                                 }
                             }
                         }

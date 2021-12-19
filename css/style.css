@@ -718,7 +718,8 @@ font-family: 'Syncopate', sans-serif;
                 font-size: 18px;
                 font-weight: bold;
                 color: #03cf5d;
-                background: #eee; }
+                background: #eee;
+                cursor: pointer; }
               #swiper .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .wrap article .back form textarea {
                 width: 100%;
                 height: 130px;
@@ -726,6 +727,7 @@ font-family: 'Syncopate', sans-serif;
                 padding: 10px;
                 border-radius: 5px;
                 background: rgba(255, 255, 255, 0.7);
+                outline: none;
                 margin-bottom: 40px;
                 color: #333;
                 resize: none; }
@@ -782,7 +784,8 @@ font-family: 'Syncopate', sans-serif;
               left: 450px; }
           #swiper .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .wrap article.on .back {
             clip-path: circle(100% at 50% 50%);
-            opacity: 1; }
+            opacity: 1;
+            z-index: 5; }
       #swiper .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .wrap {
         width: 100%;
         height: 100%;
