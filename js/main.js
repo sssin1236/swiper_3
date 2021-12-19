@@ -93,6 +93,31 @@ swiper.on("slideChangeTransitionEnd", e=>{
     }
 })
 
+//4번째 스와이퍼 클릭시 비디오 재생
+
+const video = document.querySelector(".video");
+const list = video.querySelectorAll(".list li");
+const viewBox = video.querySelector(".viewBox");
+const vid = viewBox.querySelector("video");
+
+list.forEach((lis, index)=>{
+    lis.addEventListener("click", e=>{
+        let target = list[index].querySelector("video").getAttribute("src");
+        let title = list[index].querySelector(".title h3").innerText;
+        let sub_tit = list[index].querySelector(".title span").innerText;
+        console.log(sub_tit);
+        
+        vid.setAttribute("src", target);
+        viewBox.querySelector("h3").innerText = title;
+        viewBox.querySelector("span").innerText = sub_tit;
+        
+        if(!target){
+            alert("영상을 준비 중입니다.");
+            return;
+        }
+    });
+});
+
 
 
 function activation(){
