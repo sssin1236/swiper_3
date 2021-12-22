@@ -62,8 +62,10 @@ font-family: 'Syncopate', sans-serif;
         border-right: 1px solid #111;
         position: relative; }
         #swiper .swiper-wrapper .swiper-slide #header h1 {
-          font: bold 40px/1 'Montserrat';
-          color: #111; }
+          font-size: 0; }
+          #swiper .swiper-wrapper .swiper-slide #header h1 a {
+            font: bold 40px/1 'Montserrat';
+            color: #111; }
           #swiper .swiper-wrapper .swiper-slide #header h1::after {
             content: '';
             display: block;
@@ -440,7 +442,7 @@ font-family: 'Syncopate', sans-serif;
                 color: #333;
                 margin-bottom: 30px; }
               #swiper .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .tab .tabBox li > a img {
-                width: 60%;
+                width: 70%;
                 height: 150px;
                 object-fit: cover;
                 object-position: top;

@@ -54,8 +54,13 @@ font-family: 'Syncopate', sans-serif;
                 position: relative;
 
                 h1{
-                    font: bold 40px/1 'Montserrat';
-                    color: #111;
+                    font-size: 0;
+
+                    a{
+                        font: bold 40px/1 'Montserrat';
+                        color: #111;
+                    }
+                    
 
                     &::after{
                         content: '';
@@ -536,7 +541,7 @@ font-family: 'Syncopate', sans-serif;
                                     }
     
                                     img{
-                                        width: 60%; height: 150px;
+                                        width: 70%; height: 150px;
                                         object-fit: cover;
                                         object-position: top;
                                         margin-bottom: 15px;
