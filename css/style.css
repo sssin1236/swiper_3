@@ -288,11 +288,11 @@ font-family: 'Syncopate', sans-serif;
                       letter-spacing: 1px;
                       margin-bottom: 10px; }
                     #swiper .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner .wrap article.txt #right .nav li p {
-                      width: 50%;
+                      width: 80%;
+                      height: 100px;
                       font: 18px/1.3 'Genos';
                       color: #eee;
-                      letter-spacing: 1px;
-                      margin-bottom: 20px; }
+                      letter-spacing: 1px; }
                     #swiper .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner .wrap article.txt #right .nav li a {
                       display: block;
                       width: 100%;
@@ -366,27 +366,9 @@ font-family: 'Syncopate', sans-serif;
                   font: bold 120px/1 'Syncopate';
                   color: #eee;
                   letter-spacing: 2px;
-                  margin: 20px 0;
+                  margin: 50px 0px;
                   opacity: 0;
                   transition: opacity 1.5s 0.3s; }
-                #swiper .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner .wrap article.txt #right .sns {
-                  width: 100%;
-                  opacity: 0;
-                  transition: opacity 0.7s 0.5s; }
-                  #swiper .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner .wrap article.txt #right .sns::after {
-                    content: '';
-                    display: block;
-                    clear: both; }
-                  #swiper .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner .wrap article.txt #right .sns li {
-                    float: left;
-                    width: 30px;
-                    padding-left: 3px;
-                    margin-right: 20px; }
-                    #swiper .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner .wrap article.txt #right .sns li a {
-                      text-align: center; }
-                      #swiper .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner .wrap article.txt #right .sns li a i {
-                        font-size: 15px;
-                        color: #ccc; }
                 #swiper .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner .wrap article.txt #right > p {
                   width: 80%;
                   margin-top: 20px;
@@ -447,14 +429,15 @@ font-family: 'Syncopate', sans-serif;
                 object-fit: cover;
                 object-position: top;
                 margin-bottom: 15px;
-                border: 1px solid orange; }
+                border-top: 2px solid #111; }
               #swiper .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .tab .tabBox li > a nav {
                 font: 18px/1 'Abel';
                 color: #555; }
               #swiper .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .tab .tabBox li > a:hover {
                 box-shadow: -10px 20px 40px rgba(0, 0, 0, 0.1); }
               #swiper .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .tab .tabBox li > a.on {
-                box-shadow: -10px 20px 40px rgba(0, 0, 0, 0.1); }
+                box-shadow: -10px 20px 40px rgba(0, 0, 0, 0.1);
+                border: 1px solid orange; }
         #swiper .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .tab .boxs {
           width: 100%;
           height: 55%;
@@ -527,9 +510,9 @@ font-family: 'Syncopate', sans-serif;
                 transition: 0.5s 0.8s; }
               #swiper .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .tab .boxs > div .exp p {
                 width: 60%;
-                font: 15px/1.6 'Noto Sans Kr';
+                font: 15px/1.7 'Noto Sans Kr';
                 color: #333;
-                margin-bottom: 50px;
+                margin-bottom: 20px;
                 opacity: 0;
                 transform: translateY(-20px);
                 transition: 0.5s 0.9s; }
@@ -539,11 +522,47 @@ font-family: 'Syncopate', sans-serif;
                 position: absolute;
                 bottom: -20px;
                 right: 0px; }
-              #swiper .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .tab .boxs > div .exp a {
-                font: bold 18px/1 'Noto Sans Kr';
-                color: orange;
-                opacity: 0;
-                transition: 0.5s 1s; }
+              #swiper .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .tab .boxs > div .exp .site {
+                font-size: 0;
+                width: 100%; }
+                #swiper .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .tab .boxs > div .exp .site a {
+                  display: inline-block;
+                  width: 200px;
+                  padding: 10px;
+                  background: transparent;
+                  border: 1px solid orange;
+                  border-right: none;
+                  font: 18px/1 'Montserrat';
+                  color: orange;
+                  position: relative;
+                  transition: 0.5s; }
+                  #swiper .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .tab .boxs > div .exp .site a::before {
+                    content: '';
+                    display: block;
+                    width: 15px;
+                    height: 1px;
+                    background: orange;
+                    position: absolute;
+                    top: 50%;
+                    right: 10px;
+                    transition: 0.5s; }
+                  #swiper .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .tab .boxs > div .exp .site a::after {
+                    content: '';
+                    display: block;
+                    width: 8px;
+                    height: 1px;
+                    background: orange;
+                    position: absolute;
+                    top: 50%;
+                    right: 10px;
+                    transform: rotate(30deg);
+                    transform-origin: right center;
+                    transition: 0.5s; }
+                  #swiper .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .tab .boxs > div .exp .site a:hover {
+                    background: orange;
+                    color: #fff; }
+                    #swiper .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .tab .boxs > div .exp .site a:hover::before, #swiper .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner .tab .boxs > div .exp .site a:hover::after {
+                      background: #fff; }
       #swiper .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner .wrap {
         width: 100%;
         height: 100%;
