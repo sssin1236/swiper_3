@@ -105,16 +105,18 @@ list.forEach((lis, index)=>{
         let target = list[index].querySelector("video").getAttribute("src");
         let title = list[index].querySelector(".title h3").innerText;
         let sub_tit = list[index].querySelector(".title span").innerText;
-        console.log(sub_tit);
         
-        vid.setAttribute("src", target);
-        viewBox.querySelector("h3").innerText = title;
-        viewBox.querySelector("span").innerText = sub_tit;
-        
+        for(let li of list) li.classList.remove("on");
+        list[index].classList.add("on");
+
         if(!target){
             alert("영상을 준비 중입니다.");
             return;
         }
+        
+        vid.setAttribute("src", target);
+        viewBox.querySelector("h3").innerText = title;
+        viewBox.querySelector("span").innerText = sub_tit;
     });
 });
 

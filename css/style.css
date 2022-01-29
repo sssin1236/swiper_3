@@ -52,8 +52,7 @@ font-family: 'Syncopate', sans-serif;
       width: 100%;
       height: 100%;
       padding: 40px 0;
-      position: relative;
-      top: 0; }
+      position: relative; }
       #swiper .swiper-wrapper .swiper-slide #header {
         width: 10%;
         height: 100%;
@@ -826,6 +825,9 @@ font-family: 'Syncopate', sans-serif;
             font: bold 50px/1 'Abel';
             color: #333;
             border-top: 2px solid #333; }
+          #swiper .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .wrap > div.list p {
+            font: 14px/1 'Noto Sans KR';
+            color: #555; }
           #swiper .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .wrap > div.list .list {
             width: 100%; }
             #swiper .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .wrap > div.list .list li {
@@ -833,6 +835,8 @@ font-family: 'Syncopate', sans-serif;
               padding: 20px 0;
               border-bottom: 1px solid #999;
               cursor: pointer; }
+              #swiper .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .wrap > div.list .list li:hover .title h3, #swiper .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .wrap > div.list .list li.on .title h3 {
+                color: orange; }
               #swiper .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .wrap > div.list .list li:first-child {
                 border-top: 1px solid #999; }
               #swiper .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .wrap > div.list .list li a {
@@ -855,11 +859,10 @@ font-family: 'Syncopate', sans-serif;
                     object-fit: cover;
                     transition: 0.7s; }
                 #swiper .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .wrap > div.list .list li a .title {
-                  display: inline-block;
                   height: 100%; }
                   #swiper .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .wrap > div.list .list li a .title h3 {
                     font: bold 18px/1 'Montserrat';
-                    color: orange;
+                    color: #111;
                     margin-bottom: 5px; }
                   #swiper .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner .wrap > div.list .list li a .title span {
                     font: 15px/1 'Abel';
@@ -892,7 +895,7 @@ font-family: 'Syncopate', sans-serif;
               height: 80%;
               object-fit: contain;
               background: #111;
-              margin-bottom: 30px;
+              margin-top: 30px;
               transition: 0.7s; }
   #swiper .swiper-button-next {
     height: 50px;
