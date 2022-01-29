@@ -488,7 +488,11 @@ font-family: 'Syncopate', sans-serif;
                             justify-content: space-between;
 
                             li{
-                                flex: calc(100% / 4);
+                                flex: calc(100% / 3);
+
+                                &:last-child{
+                                    display: none;
+                                }
 
                                 >a{
                                     display: block;
@@ -515,7 +519,7 @@ font-family: 'Syncopate', sans-serif;
                                     }
     
                                     img{
-                                        width: 70%; height: 150px;
+                                        width: 50%; height: 150px;
                                         object-fit: cover;
                                         object-position: top;
                                         margin-bottom: 15px;
@@ -636,7 +640,7 @@ font-family: 'Syncopate', sans-serif;
                                         width: 60%; 
                                         font: 15px/1.7 'Noto Sans Kr';
                                         color: #333;
-                                        margin-bottom: 20px;
+                                        margin-bottom: 50px;
                                         opacity: 0;
                                         transform: translateY(-20px);
                                         transition: 0.5s 0.9s;
